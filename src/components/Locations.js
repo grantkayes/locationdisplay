@@ -15,6 +15,7 @@ const Locations = (props) => {
                                             address={data.address}
                                             state={data.state}
                                             city={data.city}
+                                            allChecked={props.allChecked}
                                         />)
                     }
                 })

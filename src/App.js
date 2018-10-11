@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Locations from './components/Locations'
+import FlatButton from '@material-ui/core/Button'
 import './App.css'
 
 class App extends Component {
@@ -7,22 +8,30 @@ class App extends Component {
     super(props)
   
     this.state = {
-       locations: [], //locations will be an array of location components
+       allChecked: false,
     }
   }
 
   render() {
 
-    const addLocation = () => {
-      console.log(this.state.locations)
+    const deselectAll = () => {
+      this.setState({allChecked: false})
+      console.log(this.state.allChecked)
+    }
+
+    const selectAll = () => {
+      this.setState({allChecked: true})
+      console.log(this.state.allChecked)
     }
 
     return (
       <div>
         <h1> Select Locations </h1>
-        <button> Cancel </button> 
-        <button onClick={addLocation}> Add </button>
-        <Locations/>
+        <FlatButton> Cancel </FlatButton>
+        <FlatButton> Add </FlatButton>
+        <FlatButton onClick={deselectAll}> Deselect All </FlatButton>
+        <FlatButton onClick={selectAll}> Select All </FlatButton>
+        <Locations allChecked={this.state.allChecked}/>
       </div>
     )
   }
