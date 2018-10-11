@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
- import Locations from './components/Locations'
+import Locations from './components/Locations'
 import './App.css'
 
 class App extends Component {

@@ -4,7 +4,7 @@ const Location = (props) => {
 
     return(
         <div>
-            <h1> {props.address} </h1>
+            <h2> {props.address} </h2>
             <p> {`${props.city}, ${props.state}`} </p>
             <input type="checkbox"/>
         </div>
