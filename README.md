@@ -10,4 +10,4 @@ This React app was created for MDHearingAid
 
 ## In Action
 
-<img src="https://giphy.com/embed/TFdSKVQtR8r9IrWOmM" width="640" height="400">
+<img src="https://media.giphy.com/media/TFdSKVQtR8r9IrWOmM/giphy.gif" width="640" height="400">
