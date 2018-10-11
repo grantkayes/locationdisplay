@@ -9,11 +9,12 @@ class App extends Component {
   
     this.state = {
        allChecked: false,
+       searchValue: '',
     }
   }
 
   render() {
-
+    
     const deselectAll = () => {
       this.setState({allChecked: false})
       console.log(this.state.allChecked)
@@ -31,6 +32,9 @@ class App extends Component {
         <FlatButton> Add </FlatButton>
         <FlatButton onClick={deselectAll}> Deselect All </FlatButton>
         <FlatButton onClick={selectAll}> Select All </FlatButton>
+        <form>
+          Search: <input type='text'/>
+        </form>
         <Locations allChecked={this.state.allChecked}/>
       </div>
     )
